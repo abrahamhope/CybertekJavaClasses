@@ -12,15 +12,14 @@ public class LeftShjift130 {
                 System.out.println("Enter score for judge "+i+":");
                 score[i] = input.nextFloat();
             }
+            Arrays.sort(score);
 
             float sum=0;
-            for (int x = 1; x < 6; x++) {
-                 sum+=score[x];
+            for (int i = 1; i < 6; i++) {
+                 sum += score[i];
             }
-            System.out.println(sum);
-//            System.out.println("Enter difficulty:");
-//            float difficulty=input.nextFloat();
-//            float total= (float) (sum*0.6*difficulty);
+            System.out.println("Enter difficulty:");
+            float total= (sum*0.6f*input.nextFloat());
             // FINAL OUTPUT
             System.out.printf("Total: %.2f", total);
         }

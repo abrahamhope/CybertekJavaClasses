@@ -30,7 +30,7 @@ public class TwoDArrayPrint {
                 if(data[i][j]==4){
                     continue;
                 }
-                System.out.print("data["+i+"]["+j+"]= "+data[i][j]);
+                System.out.println("data["+i+"]["+j+"]= "+data[i][j]);
 
             }
             System.out.println();
