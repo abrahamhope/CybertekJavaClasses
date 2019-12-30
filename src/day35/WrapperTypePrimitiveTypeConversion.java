@@ -14,5 +14,8 @@ public class WrapperTypePrimitiveTypeConversion {
     public static void main(String[] args) {
         System.out.println(getYearOutOfCaseNumber("DER2019-0034"));
         System.out.println(getYearOutOfCaseNumber("IPR2009-01045"));
+
+        float f6 = Float.parseFloat("3.14f");
+        System.out.println(f6);
     }
 }
