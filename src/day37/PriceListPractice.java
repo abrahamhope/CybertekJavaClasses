@@ -50,5 +50,11 @@ public class PriceListPractice {
         }
         System.out.println("Price List after cutting half = "+ priceList);
 
+        //swap the first value with last value
+        Double temp = priceList.get(0);
+        priceList.set(0, priceList.get(priceList.size()-1));
+        priceList.set(priceList.size()-1,temp);
+
+        System.out.println("After swapping first and last value = "+priceList);
     }
 }
