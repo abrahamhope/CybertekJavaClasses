@@ -40,9 +40,12 @@ public void move1Block(){
         default:
             break;
     }
-
 }
 
+public void move1Block(String newDirection){
+setDirection(newDirection);
+move1Block();
+}
 
 public String toString() {
     return "SpaceShip{" +
