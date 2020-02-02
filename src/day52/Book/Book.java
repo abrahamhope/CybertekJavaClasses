@@ -9,7 +9,7 @@ public abstract class Book implements KnowledgeBank{
         this.author = author;
     }
 
-    public abstract void displayBookInfo();
+    public abstract void displayInfo();
 
 /*
 -- abstract

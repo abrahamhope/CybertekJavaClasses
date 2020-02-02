@@ -1,22 +1,20 @@
 package day52.Book;
 
 public class PaperBook extends Book implements Readable{
-int weight;
+    int weight;
 
-    public PaperBook(String name, String author) {
+    public PaperBook(String name, String author, int weight) {
         super(name, author);
-        this.weight=weight;
+        this.weight = weight;
     }
 
-    public void read(){
-    System.out.println("Reading the "+name+" written by "+author);
-}
-
-
     @Override
-    public void displayBookInfo() {
-        System.out.println("Paper Book Title : "+ name+ ", and the author is: "+author
-        +" and it weigh "+weight+" lb.");
+    public void displayInfo() {
+
+        System.out.println("Paper Book's name is: " + name
+                + ", and the author is: " + author
+                + " and it weigh " + weight + " pound"
+        );
     }
 
     @Override
@@ -29,12 +27,12 @@ int weight;
     }
 
     @Override
-    public void takeNote() {
-        System.out.println("Taking note from "+name);
+    public void takeNotes() {
+        System.out.println("Bookmark and Taking note from " + name);
     }
 
     @Override
-    public void showTableOfContent() {
-
+    public void read() {
+        System.out.println("Reading the " + name + " written by " + author);
     }
 }
